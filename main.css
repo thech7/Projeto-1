@@ -27,6 +27,7 @@
 
 body{
     background: var(--fundo) no-repeat top center/cover;
+    height: 100vh;
 }
 
 body * {
@@ -151,3 +152,13 @@ ul li a{
     text-align: center;
     font-size: 14px;
  }
+
+ /* media query */
+@media (min-width: 700px){
+    :root {
+        --fundo: url(./bg-desktop.jpg);
+    }
+    .light{
+        --fundo: url(./bg-desktop-light.jpg);
+    }
+}
